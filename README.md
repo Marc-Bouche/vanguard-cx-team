@@ -20,8 +20,12 @@ Would these changes encourage more clients to complete the process?</br>
 ## Github Structure </br>
 
 - README.md: Describes what the project is and how it is structured.</br>
-- code.ipynb: Coding file that contains data import, cleaning, and wrangling. Structured chronologically, following the guidelines provided on the student portal.</br>
+- Code_final.ipynb: Coding file that contains data import, cleaning, and wrangling. Structured chronologically, following the guidelines provided on the student portal.</br>
 - .gitignore: Irrelevant, deleted, or draft files that were used during the project but that are not part of the final commit.</br>
+- df_all.csv: csv file exported to Tableau for visualization.
+- df_client_test_merged.xlsx: csv file exported to Tableau for visualization.
+- df_duration_no_outliers.csv: csv file exported to Tableau for visualization.
+- df_final_demo.xlsx: csv file exported to Tableau for visualization.
 
 ## Project Process and Structure </br>
 
