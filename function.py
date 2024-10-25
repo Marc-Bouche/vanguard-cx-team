@@ -240,3 +240,37 @@ def calculate_error_rate_visit_new(df):
     error_rate = (error_count / total_sequences) * 100
 
     return error_rate
+
+#---------------------------------------------------------------------------------------------------#
+
+# Fuction 6
+#T-test for duration
+def perform_t_tests(dfs_test):
+    t_tests_results = []  # List to store the results
+    for df_pair in dfs_test:
+        # Extract the test and control groups
+        test_group = df_pair[0]
+        control_group = df_pair[1]
+        # Calculate the means for test and control groups
+        mean_test = test_group.mean()
+        mean_control = control_group.mean()
+        # Perform t-test (independent two-sample t-test with unequal variances)
+        t_stat, p_value = stats.ttest_ind(test_group, control_group, equal_var=False, alternative='greater')
+        # Store the p_value and the means in the specified format
+        t_tests_results.append((p_value, ({'mean_test': mean_test}, {'mean_control': mean_control})))
+    return t_tests_results
+
+#---------------------------------------------------------------------------------------------------#
+
+# Fuction 7
+# Identidfy outliers
+#def tukeys_test_outliers(data):
+    Q1 = data.quantile(0.25)
+    Q3 = data.quantile(0.75)
+    IQR = Q3 - Q1
+    # Define bounds for the outliers
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    # Identify the outliers
+    outliers = data[(data < lower_bound) | (data > upper_bound)]
+    return outliers
