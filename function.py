@@ -9,101 +9,6 @@ import math
 #---------------------------------------------------------------------------------------------------#
 
 # Function 1
-# This function calculate the error rate based on the process_step sequence
-# Where entire sequences are marked as valid or invalid based on whether all steps appear in order.
-# Grouped by client_id
-
-def calculate_error_rate_client(df):
-
-    # Group by client_id
-    grouped_data = df.groupby(['client_id'])
-
-    # Initialize error count
-    error_count = 0
-    total_sequences = 0
-
-    # Define the expected order
-    expected_order = ['confirm','step_3','step_2','step_1','start']
-
-    # Iterate through each group
-    for _, group in grouped_data:
-        actual_sequence = group['process_step'].tolist()
-
-        # Check if the actual sequence follows the expected order
-        current_index = 0
-        is_valid_sequence = True
-
-        for step in actual_sequence:
-            if step in expected_order:
-                step_index = expected_order.index(step)
-
-                # If step appears before the current index in the expected order, it's an error
-                if step_index < current_index:
-                    is_valid_sequence = False
-                    break
-                # Update the current index to the step's position in the expected order
-                current_index = step_index
-            else:
-                # Step not found in expected_order, marking as error
-                is_valid_sequence = False
-                break
-
-        # If the sequence was not valid, increment the error count
-        if not is_valid_sequence:
-            error_count += 1
-
-        total_sequences += 1
-
-    # Calculate error rate
-    error_rate = (error_count / total_sequences) * 100
-
-    return error_rate
-#---------------------------------------------------------------------------------------------------#
-
-# Function 2
-# This function also calculate the error rate based on the process_step sequence
-# Where every out-of-order step is counted, regardless of whether the entire sequence is valid or not.
-# Grouped by client_id
-
-def calculate_error_rate_client_new(df):
-    """Calculates the error rate based on the process_step sequence."""
-
-    # Group by client_id
-    grouped_data = df.groupby('client_id')
-
-    # Initialize error count
-    error_count = 0
-    total_sequences = 0
-
-    # Define the expected order
-    expected_order = ['confirm','step_3','step_2','step_1','start']
-
-    # Iterate through each group
-    for _, group in grouped_data:
-        actual_sequence = group['process_step'].tolist()
-
-        # Check if the actual sequence follows the expected order
-        current_index = 0
-        is_valid_sequence = True
-
-        for step in actual_sequence:
-                step_index = expected_order.index(step)
-
-                # If step appears before the current index in the expected order, it's an error
-                if step_index < current_index:
-                    error_count += 1
-                # Update the current index to the step's position in the expected order
-                current_index = step_index
-
-        total_sequences += 1
-
-    # Calculate error rate
-    error_rate = (error_count / total_sequences) * 100
-
-    return error_rate
-#---------------------------------------------------------------------------------------------------#
-
-# Function 3
 # This function calculates the total number of errors per client based on deviations from the expected order.
 # Grouped by client_id
 
@@ -145,106 +50,11 @@ def calculate_error_count_client(df):
     result_df = pd.DataFrame(result_data)
 
     return result_df
-#---------------------------------------------------------------------------------------------------#
-
-# Function 4
-# Same as function 1 but grouped by visit_id, not client_id.
-
-
-def calculate_error_rate_visit(df):
-    """Calculates the error rate based on the process_step sequence."""
-
-    # Group by visit_id
-    grouped_data = df.groupby('visit_id')
-
-    # Initialize error count
-    error_count = 0
-    total_sequences = 0
-
-    # Define the expected order
-    expected_order = ['confirm','step_3','step_2','step_1','start']
-
-    # Iterate through each group
-    for _, group in grouped_data:
-        actual_sequence = group['process_step'].tolist()
-
-        # Check if the actual sequence follows the expected order
-        current_index = 0
-        is_valid_sequence = True
-
-        for step in actual_sequence:
-            if step in expected_order:
-                step_index = expected_order.index(step)
-
-                # If step appears before the current index in the expected order, it's an error
-                if step_index < current_index:
-                    is_valid_sequence = False
-                    break
-                # Update the current index to the step's position in the expected order
-                current_index = step_index
-            else:
-                # Step not found in expected_order, marking as error
-                is_valid_sequence = False
-                break
-
-        # If the sequence was not valid, increment the error count
-        if not is_valid_sequence:
-            error_count += 1
-
-        total_sequences += 1
-
-    # Calculate error rate
-    error_rate = (error_count / total_sequences) * 100
-
-    return error_rate
-#---------------------------------------------------------------------------------------------------#
-
-# Fuction 5
-# The function directly counts each out-of-order step as an error. 
-# It increments the error count for every individual step that appears before the current position in the expected order.
-# Grouped by visit_id
-
-def calculate_error_rate_visit_new(df):
-    """Calculates the error rate based on the process_step sequence."""
-
-    # Group by visit_id
-    grouped_data = df.groupby('visit_id')
-
-    # Initialize error count
-    error_count = 0
-    total_sequences = 0
-
-    # Define the expected order
-    expected_order = ['confirm','step_3','step_2','step_1','start']
-
-    # Iterate through each group
-    for _, group in grouped_data:
-        actual_sequence = group['process_step'].tolist()
-
-        # Check if the actual sequence follows the expected order
-        current_index = 0
-        is_valid_sequence = True
-
-        for step in actual_sequence:
-                step_index = expected_order.index(step)
-
-                # If step appears before the current index in the expected order, it's an error
-                if step_index < current_index:
-                    error_count += 1
-                # Update the current index to the step's position in the expected order
-                current_index = step_index
-
-        total_sequences += 1
-
-    # Calculate error rate
-    error_rate = (error_count / total_sequences) * 100
-
-    return error_rate
 
 #---------------------------------------------------------------------------------------------------#
 
-# Fuction 6
-#T-test for duration
+# Fuction 2
+# T-test for duration
 def perform_t_tests(dfs_test):
     t_tests_results = []  # List to store the results
     for df_pair in dfs_test:
@@ -262,9 +72,9 @@ def perform_t_tests(dfs_test):
 
 #---------------------------------------------------------------------------------------------------#
 
-# Fuction 7
+# Fuction 3
 # Identidfy outliers
-#def tukeys_test_outliers(data):
+def tukeys_test_outliers(data):
     Q1 = data.quantile(0.25)
     Q3 = data.quantile(0.75)
     IQR = Q3 - Q1
