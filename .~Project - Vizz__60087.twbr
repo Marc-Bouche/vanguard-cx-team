@@ -1,0 +1,2021 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Blatt 1 - df_final_demo (df_final_demo)' inline='true' name='federated.11q8cey1klcvqp19xztdk1vil1ni' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_final_demo' name='excel-direct.0kvazbw0yxrrs413t0wg51dmjfrz'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/janoskamke/Documents/GitHub/vanguard-cx-team/df_final_demo.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0kvazbw0yxrrs413t0wg51dmjfrz' name='Blatt 1 - df_final_demo' table='[&apos;Blatt 1 - df_final_demo$&apos;]' type='table'>
+          <columns gridOrigin='A1:I10001:no:A1:I10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='client_id' ordinal='0' />
+            <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+            <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+            <column datatype='real' name='clnt_age' ordinal='3' />
+            <column datatype='string' name='gendr' ordinal='4' />
+            <column datatype='integer' name='num_accts' ordinal='5' />
+            <column datatype='real' name='bal' ordinal='6' />
+            <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+            <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0kvazbw0yxrrs413t0wg51dmjfrz' name='Blatt 1 - df_final_demo' table='[&apos;Blatt 1 - df_final_demo$&apos;]' type='table'>
+          <columns gridOrigin='A1:I10001:no:A1:I10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='client_id' ordinal='0' />
+            <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+            <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+            <column datatype='real' name='clnt_age' ordinal='3' />
+            <column datatype='string' name='gendr' ordinal='4' />
+            <column datatype='integer' name='num_accts' ordinal='5' />
+            <column datatype='real' name='bal' ordinal='6' />
+            <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+            <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_yr]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>clnt_tenure_yr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calls_6_mnth]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>calls_6_mnth</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logons_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[logons_6_mnth]</local-name>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias>logons_6_mnth</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Blatt 1 - df_final_demo]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I10001:no:A1:I2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Calls 6 Mnth (Gruppe)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[calls_6_mnth]' new-bin='true'>
+          <bin default-name='false' value='&quot;0&quot;'>
+            <value>%null%</value>
+            <value>0</value>
+          </bin>
+          <bin default-name='true' value='&quot;1&quot;'>
+            <value>1</value>
+          </bin>
+          <bin default-name='true' value='&quot;2&quot;'>
+            <value>2</value>
+          </bin>
+          <bin default-name='true' value='&quot;3&quot;'>
+            <value>3</value>
+          </bin>
+          <bin default-name='true' value='&quot;4&quot;'>
+            <value>4</value>
+          </bin>
+          <bin default-name='true' value='&quot;5&quot;'>
+            <value>5</value>
+          </bin>
+          <bin default-name='true' value='&quot;6&quot;'>
+            <value>6</value>
+          </bin>
+          <bin default-name='true' value='&quot;7&quot;'>
+            <value>7</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Clnt Age (Gruppe)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[clnt_age]' new-bin='true'>
+          <bin default-name='false' value='&quot;Adults (30-39)&quot;'>
+            <value>30.0</value>
+            <value>30.5</value>
+            <value>31.0</value>
+            <value>31.5</value>
+            <value>32.0</value>
+            <value>32.5</value>
+            <value>33.0</value>
+            <value>33.5</value>
+            <value>34.0</value>
+            <value>34.5</value>
+            <value>35.0</value>
+            <value>35.5</value>
+            <value>36.0</value>
+            <value>36.5</value>
+            <value>37.0</value>
+            <value>37.5</value>
+            <value>38.0</value>
+            <value>38.5</value>
+            <value>39.0</value>
+            <value>39.5</value>
+          </bin>
+          <bin default-name='false' value='&quot;Adults (40-49)&quot;'>
+            <value>40.0</value>
+            <value>40.5</value>
+            <value>41.0</value>
+            <value>41.5</value>
+            <value>42.0</value>
+            <value>42.5</value>
+            <value>43.0</value>
+            <value>43.5</value>
+            <value>44.0</value>
+            <value>44.5</value>
+            <value>45.0</value>
+            <value>45.5</value>
+            <value>46.0</value>
+            <value>46.5</value>
+            <value>47.0</value>
+            <value>47.5</value>
+            <value>48.0</value>
+            <value>48.5</value>
+            <value>49.0</value>
+            <value>49.5</value>
+          </bin>
+          <bin default-name='false' value='&quot;Adults (50-59)&quot;'>
+            <value>50.0</value>
+            <value>50.5</value>
+            <value>51.0</value>
+            <value>51.5</value>
+            <value>52.0</value>
+            <value>52.5</value>
+            <value>53.0</value>
+            <value>53.5</value>
+            <value>54.0</value>
+            <value>54.5</value>
+            <value>55.0</value>
+            <value>55.5</value>
+            <value>56.0</value>
+            <value>56.5</value>
+            <value>57.0</value>
+            <value>57.5</value>
+            <value>58.0</value>
+            <value>58.5</value>
+            <value>59.0</value>
+            <value>59.5</value>
+          </bin>
+          <bin default-name='false' value='&quot;Adults (60-69)&quot;'>
+            <value>60.0</value>
+            <value>60.5</value>
+            <value>61.0</value>
+            <value>61.5</value>
+            <value>62.0</value>
+            <value>62.5</value>
+            <value>63.0</value>
+            <value>63.5</value>
+            <value>64.0</value>
+            <value>64.5</value>
+            <value>65.0</value>
+            <value>65.5</value>
+            <value>66.0</value>
+            <value>66.5</value>
+            <value>67.0</value>
+            <value>67.5</value>
+            <value>68.0</value>
+            <value>68.5</value>
+            <value>69.0</value>
+            <value>69.5</value>
+          </bin>
+          <bin default-name='true' value='&quot;NULL&quot;'>
+            <value>%null%</value>
+          </bin>
+          <bin default-name='false' value='&quot;Senior (70-79)&quot;'>
+            <value>70.0</value>
+            <value>70.5</value>
+            <value>71.0</value>
+            <value>71.5</value>
+            <value>72.0</value>
+            <value>72.5</value>
+            <value>73.0</value>
+            <value>73.5</value>
+            <value>74.0</value>
+            <value>74.5</value>
+            <value>75.0</value>
+            <value>75.5</value>
+            <value>76.0</value>
+            <value>76.5</value>
+            <value>77.0</value>
+            <value>77.5</value>
+            <value>78.0</value>
+            <value>78.5</value>
+            <value>79.0</value>
+            <value>79.5</value>
+          </bin>
+          <bin default-name='false' value='&quot;Senior (80-89)&quot;'>
+            <value>80.0</value>
+            <value>80.5</value>
+            <value>81.0</value>
+            <value>81.5</value>
+            <value>82.0</value>
+            <value>82.5</value>
+            <value>83.0</value>
+            <value>83.5</value>
+            <value>84.0</value>
+            <value>84.5</value>
+            <value>85.0</value>
+            <value>85.5</value>
+            <value>86.0</value>
+            <value>86.5</value>
+            <value>87.0</value>
+            <value>87.5</value>
+            <value>88.0</value>
+            <value>88.5</value>
+            <value>89.0</value>
+            <value>89.5</value>
+          </bin>
+          <bin default-name='false' value='&quot;Senior (90+)&quot;'>
+            <value>90.0</value>
+            <value>90.5</value>
+            <value>91.0</value>
+            <value>91.5</value>
+            <value>92.0</value>
+            <value>92.5</value>
+            <value>93.0</value>
+            <value>93.5</value>
+            <value>94.0</value>
+            <value>94.5</value>
+            <value>95.5</value>
+            <value>96.0</value>
+          </bin>
+          <bin default-name='false' value='&quot;Underage (17-20)&quot;'>
+            <value>13.5</value>
+            <value>14.0</value>
+            <value>14.5</value>
+            <value>15.0</value>
+            <value>15.5</value>
+            <value>16.0</value>
+            <value>16.5</value>
+            <value>17.0</value>
+            <value>17.5</value>
+            <value>18.0</value>
+            <value>18.5</value>
+            <value>19.0</value>
+            <value>19.5</value>
+            <value>20.0</value>
+            <value>20.5</value>
+          </bin>
+          <bin default-name='false' value='&quot;Young Adults (21-29)&quot;'>
+            <value>21.0</value>
+            <value>21.5</value>
+            <value>22.0</value>
+            <value>22.5</value>
+            <value>23.0</value>
+            <value>23.5</value>
+            <value>24.0</value>
+            <value>24.5</value>
+            <value>25.0</value>
+            <value>25.5</value>
+            <value>26.0</value>
+            <value>26.5</value>
+            <value>27.0</value>
+            <value>27.5</value>
+            <value>28.0</value>
+            <value>28.5</value>
+            <value>29.0</value>
+            <value>29.5</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Logons 6 Mnth (Gruppe)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[logons_6_mnth]' new-bin='true'>
+          <bin default-name='false' value='&quot;0&quot;'>
+            <value>%null%</value>
+          </bin>
+          <bin default-name='true' value='&quot;1&quot;'>
+            <value>1</value>
+          </bin>
+          <bin default-name='true' value='&quot;2&quot;'>
+            <value>2</value>
+          </bin>
+          <bin default-name='true' value='&quot;3&quot;'>
+            <value>3</value>
+          </bin>
+          <bin default-name='true' value='&quot;4&quot;'>
+            <value>4</value>
+          </bin>
+          <bin default-name='true' value='&quot;5&quot;'>
+            <value>5</value>
+          </bin>
+          <bin default-name='true' value='&quot;6&quot;'>
+            <value>6</value>
+          </bin>
+          <bin default-name='true' value='&quot;7&quot;'>
+            <value>7</value>
+          </bin>
+          <bin default-name='true' value='&quot;8&quot;'>
+            <value>8</value>
+          </bin>
+          <bin default-name='true' value='&quot;9&quot;'>
+            <value>9</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Blatt 1 - df_final_demo' datatype='table' name='[__tableau_internal_object_id__].[Blatt 1 - df!final!demo_76E24B8DFD8C417B98B5CA7DC40125C6]' role='measure' type='quantitative' />
+      <column caption='Bal' datatype='real' name='[bal]' role='measure' type='quantitative' />
+      <column caption='Calls 6 Mnth' datatype='integer' name='[calls_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Client Id' datatype='string' name='[client_id]' role='dimension' type='nominal' />
+      <column caption='Clnt Age' datatype='real' name='[clnt_age]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Mnth' datatype='integer' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Yr' datatype='integer' name='[clnt_tenure_yr]' role='dimension' type='quantitative' />
+      <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+      <column caption='Logons 6 Mnth' datatype='integer' name='[logons_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Num Accts' datatype='integer' name='[num_accts]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Blatt 1 - df_final_demo' id='Blatt 1 - df!final!demo_76E24B8DFD8C417B98B5CA7DC40125C6'>
+            <properties context=''>
+              <relation connection='excel-direct.0kvazbw0yxrrs413t0wg51dmjfrz' name='Blatt 1 - df_final_demo' table='[&apos;Blatt 1 - df_final_demo$&apos;]' type='table'>
+                <columns gridOrigin='A1:I10001:no:A1:I10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='client_id' ordinal='0' />
+                  <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+                  <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+                  <column datatype='real' name='clnt_age' ordinal='3' />
+                  <column datatype='string' name='gendr' ordinal='4' />
+                  <column datatype='integer' name='num_accts' ordinal='5' />
+                  <column datatype='real' name='bal' ordinal='6' />
+                  <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+                  <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Blatt 1 - df_client_test_merged (df_client_test_merged)' inline='true' name='federated.1cf7t3b1lxgwsb19jb12r0s9t4ee' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_client_test_merged' name='excel-direct.00ijlyv1xpab0416cpjni14qlzgl'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/janoskamke/Documents/GitHub/vanguard-cx-team/df_client_test_merged.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.00ijlyv1xpab0416cpjni14qlzgl' name='Blatt 1 - df_client_test_merged' table='[&apos;Blatt 1 - df_client_test_merged$&apos;]' type='table'>
+          <columns gridOrigin='A1:J10001:no:A1:J10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+            <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+            <column datatype='integer' name='clnt_age' ordinal='3' />
+            <column datatype='string' name='gendr' ordinal='4' />
+            <column datatype='integer' name='num_accts' ordinal='5' />
+            <column datatype='real' name='bal' ordinal='6' />
+            <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+            <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+            <column datatype='string' name='Variation' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.00ijlyv1xpab0416cpjni14qlzgl' name='Blatt 1 - df_client_test_merged' table='[&apos;Blatt 1 - df_client_test_merged$&apos;]' type='table'>
+          <columns gridOrigin='A1:J10001:no:A1:J10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+            <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+            <column datatype='integer' name='clnt_age' ordinal='3' />
+            <column datatype='string' name='gendr' ordinal='4' />
+            <column datatype='integer' name='num_accts' ordinal='5' />
+            <column datatype='real' name='bal' ordinal='6' />
+            <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+            <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+            <column datatype='string' name='Variation' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J10001:no:A1:J10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_yr]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>clnt_tenure_yr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calls_6_mnth]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>calls_6_mnth</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logons_6_mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[logons_6_mnth]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>logons_6_mnth</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[Blatt 1 - df_client_test_merged]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Variation (Gruppe)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Variation]' new-bin='true'>
+          <bin default-name='false' value='&quot;Total&quot;'>
+            <value>%null%</value>
+            <value>&quot;Control&quot;</value>
+            <value>&quot;Test&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Blatt 1 - df_client_test_merged' datatype='table' name='[__tableau_internal_object_id__].[Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0]' role='measure' type='quantitative' />
+      <column caption='Bal' datatype='real' name='[bal]' role='measure' type='quantitative' />
+      <column caption='Calls 6 Mnth' datatype='integer' name='[calls_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Clnt Age' datatype='integer' name='[clnt_age]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Mnth' datatype='integer' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Yr' datatype='integer' name='[clnt_tenure_yr]' role='dimension' type='quantitative' />
+      <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+      <column caption='Logons 6 Mnth' datatype='integer' name='[logons_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Num Accts' datatype='integer' name='[num_accts]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Blatt 1 - df_client_test_merged' id='Blatt 1 - df!client!test!merged_03D5DD81880C4BCBAFEDB32CBFD749B0'>
+            <properties context=''>
+              <relation connection='excel-direct.00ijlyv1xpab0416cpjni14qlzgl' name='Blatt 1 - df_client_test_merged' table='[&apos;Blatt 1 - df_client_test_merged$&apos;]' type='table'>
+                <columns gridOrigin='A1:J10001:no:A1:J10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='client_id' ordinal='0' />
+                  <column datatype='integer' name='clnt_tenure_yr' ordinal='1' />
+                  <column datatype='integer' name='clnt_tenure_mnth' ordinal='2' />
+                  <column datatype='integer' name='clnt_age' ordinal='3' />
+                  <column datatype='string' name='gendr' ordinal='4' />
+                  <column datatype='integer' name='num_accts' ordinal='5' />
+                  <column datatype='real' name='bal' ordinal='6' />
+                  <column datatype='integer' name='calls_6_mnth' ordinal='7' />
+                  <column datatype='integer' name='logons_6_mnth' ordinal='8' />
+                  <column datatype='string' name='Variation' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='df_duration_no_outliers' inline='true' name='federated.1hex9c102rjpxb13jufsd0n2oajy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_duration_no_outliers' name='textscan.033j3ks167xovy1b7x0v8080gl6s'>
+            <connection class='textscan' directory='/Users/janoskamke/Documents/GitHub/vanguard-cx-team' filename='df_duration_no_outliers.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.033j3ks167xovy1b7x0v8080gl6s' name='df_duration_no_outliers.csv' table='[df_duration_no_outliers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='client_id' ordinal='1' />
+            <column datatype='string' name='Variation' ordinal='2' />
+            <column datatype='string' name='visitor_id' ordinal='3' />
+            <column datatype='string' name='visit_id' ordinal='4' />
+            <column datatype='string' name='process_step' ordinal='5' />
+            <column datatype='string' name='duration' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.033j3ks167xovy1b7x0v8080gl6s' name='df_duration_no_outliers.csv' table='[df_duration_no_outliers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='client_id' ordinal='1' />
+            <column datatype='string' name='Variation' ordinal='2' />
+            <column datatype='string' name='visitor_id' ordinal='3' />
+            <column datatype='string' name='visit_id' ordinal='4' />
+            <column datatype='string' name='process_step' ordinal='5' />
+            <column datatype='string' name='duration' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visitor_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visitor_id]</local-name>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias>visitor_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[df_duration_no_outliers.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_duration_no_outliers.csv' datatype='table' name='[__tableau_internal_object_id__].[df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_duration_no_outliers.csv' id='df_duration_no_outliers.csv_6362A0CDAC2B42B2ADE951047AA524FE'>
+            <properties context=''>
+              <relation connection='textscan.033j3ks167xovy1b7x0v8080gl6s' name='df_duration_no_outliers.csv' table='[df_duration_no_outliers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='client_id' ordinal='1' />
+                  <column datatype='string' name='Variation' ordinal='2' />
+                  <column datatype='string' name='visitor_id' ordinal='3' />
+                  <column datatype='string' name='visit_id' ordinal='4' />
+                  <column datatype='string' name='process_step' ordinal='5' />
+                  <column datatype='string' name='duration' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='df_all' inline='true' name='federated.006v8q31dviszd17muyfy0esylwl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_all' name='textscan.1pl39gu108wkw419ygrys0ysr0x5'>
+            <connection class='textscan' directory='/Users/janoskamke/Documents/GitHub/vanguard-cx-team' filename='df_all.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1pl39gu108wkw419ygrys0ysr0x5' name='df_all.csv' table='[df_all#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='client_id' ordinal='1' />
+            <column datatype='real' name='clnt_tenure_yr' ordinal='2' />
+            <column datatype='real' name='clnt_tenure_mnth' ordinal='3' />
+            <column datatype='integer' name='clnt_age' ordinal='4' />
+            <column datatype='string' name='gendr' ordinal='5' />
+            <column datatype='real' name='num_accts' ordinal='6' />
+            <column datatype='real' name='bal' ordinal='7' />
+            <column datatype='real' name='calls_6_mnth' ordinal='8' />
+            <column datatype='real' name='logons_6_mnth' ordinal='9' />
+            <column datatype='string' name='Variation' ordinal='10' />
+            <column datatype='integer' name='error_count' ordinal='11' />
+            <column datatype='real' name='completed' ordinal='12' />
+            <column datatype='integer' name='distinct_visit_count' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1pl39gu108wkw419ygrys0ysr0x5' name='df_all.csv' table='[df_all#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='client_id' ordinal='1' />
+            <column datatype='real' name='clnt_tenure_yr' ordinal='2' />
+            <column datatype='real' name='clnt_tenure_mnth' ordinal='3' />
+            <column datatype='integer' name='clnt_age' ordinal='4' />
+            <column datatype='string' name='gendr' ordinal='5' />
+            <column datatype='real' name='num_accts' ordinal='6' />
+            <column datatype='real' name='bal' ordinal='7' />
+            <column datatype='real' name='calls_6_mnth' ordinal='8' />
+            <column datatype='real' name='logons_6_mnth' ordinal='9' />
+            <column datatype='string' name='Variation' ordinal='10' />
+            <column datatype='integer' name='error_count' ordinal='11' />
+            <column datatype='real' name='completed' ordinal='12' />
+            <column datatype='integer' name='distinct_visit_count' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_yr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_tenure_yr]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>clnt_tenure_yr</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_mnth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calls_6_mnth]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>calls_6_mnth</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logons_6_mnth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[logons_6_mnth]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>logons_6_mnth</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>error_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[error_count]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>error_count</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[completed]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>completed</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distinct_visit_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distinct_visit_count]</local-name>
+            <parent-name>[df_all.csv]</parent-name>
+            <remote-alias>distinct_visit_count</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Error per Visit' datatype='real' name='[Calculation_4228246738534973443]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[error_count]/[distinct_visit_count]' />
+      </column>
+      <column caption='Percentage of Clients' datatype='real' name='[Calculation_4228246738538090500]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([client_id])/SUM([client_id])*100' />
+      </column>
+      <column datatype='string' name='[Error Count (Gruppe)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[error_count]' new-bin='true'>
+          <bin default-name='true' value='&quot;0&quot;'>
+            <value>0</value>
+          </bin>
+          <bin default-name='true' value='&quot;1&quot;'>
+            <value>1</value>
+          </bin>
+          <bin default-name='false' value='&quot;10&quot;'>
+            <value>10</value>
+          </bin>
+          <bin default-name='false' value='&quot;11-15&quot;'>
+            <value>11</value>
+            <value>12</value>
+            <value>13</value>
+            <value>14</value>
+            <value>15</value>
+          </bin>
+          <bin default-name='false' value='&quot;16-20&quot;'>
+            <value>16</value>
+            <value>17</value>
+            <value>20</value>
+          </bin>
+          <bin default-name='true' value='&quot;2&quot;'>
+            <value>2</value>
+          </bin>
+          <bin default-name='false' value='&quot;21-25&quot;'>
+            <value>21</value>
+            <value>23</value>
+            <value>25</value>
+          </bin>
+          <bin default-name='true' value='&quot;3&quot;'>
+            <value>3</value>
+          </bin>
+          <bin default-name='true' value='&quot;4&quot;'>
+            <value>4</value>
+          </bin>
+          <bin default-name='false' value='&quot;5&quot;'>
+            <value>5</value>
+          </bin>
+          <bin default-name='true' value='&quot;6&quot;'>
+            <value>6</value>
+          </bin>
+          <bin default-name='true' value='&quot;7&quot;'>
+            <value>7</value>
+          </bin>
+          <bin default-name='true' value='&quot;8&quot;'>
+            <value>8</value>
+          </bin>
+          <bin default-name='true' value='&quot;9&quot;'>
+            <value>9</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_all.csv' datatype='table' name='[__tableau_internal_object_id__].[df_all.csv_430A2A3FBB694179856D1D1F80031994]' role='measure' type='quantitative' />
+      <column caption='Bal' datatype='real' name='[bal]' role='dimension' type='ordinal' />
+      <column caption='Calls 6 Mnth' datatype='real' name='[calls_6_mnth]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Clnt Age' datatype='integer' name='[clnt_age]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Mnth' datatype='real' name='[clnt_tenure_mnth]' role='dimension' type='ordinal' />
+      <column caption='Clnt Tenure Yr' datatype='real' name='[clnt_tenure_yr]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' caption='Completed' datatype='real' name='[completed]' role='dimension' type='ordinal' />
+      <column caption='Distinct Visit Count' datatype='integer' name='[distinct_visit_count]' role='measure' type='quantitative' />
+      <column caption='Error Count' datatype='integer' name='[error_count]' role='measure' type='quantitative' />
+      <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+      <column caption='Logons 6 Mnth' datatype='real' name='[logons_6_mnth]' role='dimension' type='ordinal' />
+      <column caption='Num Accts' datatype='real' name='[num_accts]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_all.csv' id='df_all.csv_430A2A3FBB694179856D1D1F80031994'>
+            <properties context=''>
+              <relation connection='textscan.1pl39gu108wkw419ygrys0ysr0x5' name='df_all.csv' table='[df_all#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='client_id' ordinal='1' />
+                  <column datatype='real' name='clnt_tenure_yr' ordinal='2' />
+                  <column datatype='real' name='clnt_tenure_mnth' ordinal='3' />
+                  <column datatype='integer' name='clnt_age' ordinal='4' />
+                  <column datatype='string' name='gendr' ordinal='5' />
+                  <column datatype='real' name='num_accts' ordinal='6' />
+                  <column datatype='real' name='bal' ordinal='7' />
+                  <column datatype='real' name='calls_6_mnth' ordinal='8' />
+                  <column datatype='real' name='logons_6_mnth' ordinal='9' />
+                  <column datatype='string' name='Variation' ordinal='10' />
+                  <column datatype='integer' name='error_count' ordinal='11' />
+                  <column datatype='real' name='completed' ordinal='12' />
+                  <column datatype='integer' name='distinct_visit_count' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Blatt 13'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1846338A-C03F-48C3-BE92-2A75A961C860}' />
+    </worksheet>
+    <worksheet name='Blatt 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Blatt 1 - df_final_demo (df_final_demo)' name='federated.11q8cey1klcvqp19xztdk1vil1ni' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11q8cey1klcvqp19xztdk1vil1ni'>
+            <column datatype='string' name='[Logons 6 Mnth (Gruppe)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[logons_6_mnth]' new-bin='true'>
+                <bin default-name='false' value='&quot;0&quot;'>
+                  <value>%null%</value>
+                </bin>
+                <bin default-name='true' value='&quot;1&quot;'>
+                  <value>1</value>
+                </bin>
+                <bin default-name='true' value='&quot;2&quot;'>
+                  <value>2</value>
+                </bin>
+                <bin default-name='true' value='&quot;3&quot;'>
+                  <value>3</value>
+                </bin>
+                <bin default-name='true' value='&quot;4&quot;'>
+                  <value>4</value>
+                </bin>
+                <bin default-name='true' value='&quot;5&quot;'>
+                  <value>5</value>
+                </bin>
+                <bin default-name='true' value='&quot;6&quot;'>
+                  <value>6</value>
+                </bin>
+                <bin default-name='true' value='&quot;7&quot;'>
+                  <value>7</value>
+                </bin>
+                <bin default-name='true' value='&quot;8&quot;'>
+                  <value>8</value>
+                </bin>
+                <bin default-name='true' value='&quot;9&quot;'>
+                  <value>9</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Client Id' datatype='string' name='[client_id]' role='dimension' type='nominal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Logons 6 Mnth' datatype='integer' name='[logons_6_mnth]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.11q8cey1klcvqp19xztdk1vil1ni].[cnt:client_id:qk]</rows>
+        <cols>[federated.11q8cey1klcvqp19xztdk1vil1ni].[Logons 6 Mnth (Gruppe)]</cols>
+      </table>
+      <simple-id uuid='{1E30DC73-DEC4-4F5C-9A2D-41402DB4EDBE}' />
+    </worksheet>
+    <worksheet name='Blatt 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Blatt 1 - df_final_demo (df_final_demo)' name='federated.11q8cey1klcvqp19xztdk1vil1ni' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11q8cey1klcvqp19xztdk1vil1ni'>
+            <column datatype='string' name='[Calls 6 Mnth (Gruppe)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[calls_6_mnth]' new-bin='true'>
+                <bin default-name='false' value='&quot;0&quot;'>
+                  <value>%null%</value>
+                  <value>0</value>
+                </bin>
+                <bin default-name='true' value='&quot;1&quot;'>
+                  <value>1</value>
+                </bin>
+                <bin default-name='true' value='&quot;2&quot;'>
+                  <value>2</value>
+                </bin>
+                <bin default-name='true' value='&quot;3&quot;'>
+                  <value>3</value>
+                </bin>
+                <bin default-name='true' value='&quot;4&quot;'>
+                  <value>4</value>
+                </bin>
+                <bin default-name='true' value='&quot;5&quot;'>
+                  <value>5</value>
+                </bin>
+                <bin default-name='true' value='&quot;6&quot;'>
+                  <value>6</value>
+                </bin>
+                <bin default-name='true' value='&quot;7&quot;'>
+                  <value>7</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Calls 6 Mnth' datatype='integer' name='[calls_6_mnth]' role='measure' type='quantitative' />
+            <column caption='Client Id' datatype='string' name='[client_id]' role='dimension' type='nominal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.11q8cey1klcvqp19xztdk1vil1ni].[cnt:client_id:qk]</rows>
+        <cols>[federated.11q8cey1klcvqp19xztdk1vil1ni].[Calls 6 Mnth (Gruppe)]</cols>
+      </table>
+      <simple-id uuid='{40A66D7D-7A1F-413B-A6CB-3145E36394FB}' />
+    </worksheet>
+    <worksheet name='Completion Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_all' name='federated.006v8q31dviszd17muyfy0esylwl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.006v8q31dviszd17muyfy0esylwl'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[completed]' derivation='Avg' name='[avg:completed:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Completed' datatype='real' name='[completed]' role='dimension' type='ordinal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' value='215' />
+            <format attr='text-format' field='[federated.006v8q31dviszd17muyfy0esylwl].[avg:completed:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' />
+              <text column='[federated.006v8q31dviszd17muyfy0esylwl].[avg:completed:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.006v8q31dviszd17muyfy0esylwl].[avg:completed:qk]</rows>
+        <cols>[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{E4DA5842-55DF-4764-A34F-14A50D58639B}' />
+    </worksheet>
+    <worksheet name='Demographics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_all' name='federated.006v8q31dviszd17muyfy0esylwl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.006v8q31dviszd17muyfy0esylwl'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[calls_6_mnth]' derivation='Avg' name='[avg:calls_6_mnth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clnt_age]' derivation='Avg' name='[avg:clnt_age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clnt_tenure_yr]' derivation='Avg' name='[avg:clnt_tenure_yr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[logons_6_mnth]' derivation='Avg' name='[avg:logons_6_mnth:qk]' pivot='key' type='quantitative' />
+            <column caption='Calls 6 Mnth' datatype='real' name='[calls_6_mnth]' role='dimension' type='ordinal' />
+            <column caption='Clnt Age' datatype='integer' name='[clnt_age]' role='measure' type='quantitative' />
+            <column caption='Clnt Tenure Yr' datatype='real' name='[clnt_tenure_yr]' role='dimension' type='ordinal' />
+            <column caption='Logons 6 Mnth' datatype='real' name='[logons_6_mnth]' role='dimension' type='ordinal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.006v8q31dviszd17muyfy0esylwl].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:clnt_age:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:logons_6_mnth:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:calls_6_mnth:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:clnt_tenure_yr:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.006v8q31dviszd17muyfy0esylwl].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:clnt_age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:logons_6_mnth:qk]&quot;</bucket>
+              <bucket>&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:calls_6_mnth:qk]&quot;</bucket>
+              <bucket>&quot;[federated.006v8q31dviszd17muyfy0esylwl].[avg:clnt_tenure_yr:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.006v8q31dviszd17muyfy0esylwl].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.006v8q31dviszd17muyfy0esylwl].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]</rows>
+        <cols>[federated.006v8q31dviszd17muyfy0esylwl].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{21183F83-163F-452E-A941-BF5785D0D0F4}' />
+    </worksheet>
+    <worksheet name='Error Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_all' name='federated.006v8q31dviszd17muyfy0esylwl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.006v8q31dviszd17muyfy0esylwl'>
+            <column datatype='string' name='[Error Count (Gruppe)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[error_count]' new-bin='true'>
+                <bin default-name='true' value='&quot;0&quot;'>
+                  <value>0</value>
+                </bin>
+                <bin default-name='true' value='&quot;1&quot;'>
+                  <value>1</value>
+                </bin>
+                <bin default-name='false' value='&quot;10&quot;'>
+                  <value>10</value>
+                </bin>
+                <bin default-name='false' value='&quot;11-15&quot;'>
+                  <value>11</value>
+                  <value>12</value>
+                  <value>13</value>
+                  <value>14</value>
+                  <value>15</value>
+                </bin>
+                <bin default-name='false' value='&quot;16-20&quot;'>
+                  <value>16</value>
+                  <value>17</value>
+                  <value>20</value>
+                </bin>
+                <bin default-name='true' value='&quot;2&quot;'>
+                  <value>2</value>
+                </bin>
+                <bin default-name='false' value='&quot;21-25&quot;'>
+                  <value>21</value>
+                  <value>23</value>
+                  <value>25</value>
+                </bin>
+                <bin default-name='true' value='&quot;3&quot;'>
+                  <value>3</value>
+                </bin>
+                <bin default-name='true' value='&quot;4&quot;'>
+                  <value>4</value>
+                </bin>
+                <bin default-name='false' value='&quot;5&quot;'>
+                  <value>5</value>
+                </bin>
+                <bin default-name='true' value='&quot;6&quot;'>
+                  <value>6</value>
+                </bin>
+                <bin default-name='true' value='&quot;7&quot;'>
+                  <value>7</value>
+                </bin>
+                <bin default-name='true' value='&quot;8&quot;'>
+                  <value>8</value>
+                </bin>
+                <bin default-name='true' value='&quot;9&quot;'>
+                  <value>9</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column caption='Error Count' datatype='integer' name='[error_count]' role='measure' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[client_id]' derivation='Count' name='[pcto:cnt:client_id:qk:5]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.006v8q31dviszd17muyfy0esylwl].[Error Count (Gruppe)]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' value='30' />
+            <format attr='text-format' field='[federated.006v8q31dviszd17muyfy0esylwl].[pcto:cnt:client_id:qk:5]' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.006v8q31dviszd17muyfy0esylwl].[pcto:cnt:client_id:qk:5]</rows>
+        <cols>([federated.006v8q31dviszd17muyfy0esylwl].[Error Count (Gruppe)] / [federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk])</cols>
+      </table>
+      <simple-id uuid='{2C2BCD07-C8A9-40C1-A283-D7D78EFEB968}' />
+    </worksheet>
+    <worksheet name='Error Rate per Customer'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_all' name='federated.006v8q31dviszd17muyfy0esylwl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.006v8q31dviszd17muyfy0esylwl'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[error_count]' derivation='Avg' name='[avg:error_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Error Count' datatype='integer' name='[error_count]' role='measure' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' value='213' />
+            <format attr='text-format' field='[federated.006v8q31dviszd17muyfy0esylwl].[avg:error_count:qk]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' />
+              <text column='[federated.006v8q31dviszd17muyfy0esylwl].[avg:error_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.006v8q31dviszd17muyfy0esylwl].[avg:error_count:qk]</rows>
+        <cols>[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{2B5A7603-422B-44E1-9B3C-77CEE00BC7BA}' />
+    </worksheet>
+    <worksheet name='Error per Visit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_all' name='federated.006v8q31dviszd17muyfy0esylwl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.006v8q31dviszd17muyfy0esylwl'>
+            <column caption='Error per Visit' datatype='real' name='[Calculation_4228246738534973443]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[error_count]/[distinct_visit_count]' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4228246738534973443]' derivation='Avg' name='[avg:Calculation_4228246738534973443:qk]' pivot='key' type='quantitative' />
+            <column caption='Distinct Visit Count' datatype='integer' name='[distinct_visit_count]' role='measure' type='quantitative' />
+            <column caption='Error Count' datatype='integer' name='[error_count]' role='measure' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' value='198' />
+            <format attr='text-format' field='[federated.006v8q31dviszd17muyfy0esylwl].[avg:Calculation_4228246738534973443:qk]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' />
+              <text column='[federated.006v8q31dviszd17muyfy0esylwl].[avg:Calculation_4228246738534973443:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.006v8q31dviszd17muyfy0esylwl].[avg:Calculation_4228246738534973443:qk]</rows>
+        <cols>[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{A6476EE3-D456-48A9-9F7F-866C555BFE67}' />
+    </worksheet>
+    <worksheet name='Total - Demo'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Blatt 1 - df_client_test_merged (df_client_test_merged)' name='federated.1cf7t3b1lxgwsb19jb12r0s9t4ee' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cf7t3b1lxgwsb19jb12r0s9t4ee'>
+            <column-instance column='[bal]' derivation='Avg' name='[avg:bal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clnt_age]' derivation='Avg' name='[avg:clnt_age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clnt_tenure_mnth]' derivation='Avg' name='[avg:clnt_tenure_mnth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clnt_tenure_yr]' derivation='Avg' name='[avg:clnt_tenure_yr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[logons_6_mnth]' derivation='Avg' name='[avg:logons_6_mnth:qk]' pivot='key' type='quantitative' />
+            <column caption='Bal' datatype='real' name='[bal]' role='measure' type='quantitative' />
+            <column caption='Clnt Age' datatype='integer' name='[clnt_age]' role='measure' type='quantitative' />
+            <column caption='Clnt Tenure Mnth' datatype='integer' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+            <column caption='Clnt Tenure Yr' datatype='integer' name='[clnt_tenure_yr]' role='dimension' type='quantitative' />
+            <column caption='Logons 6 Mnth' datatype='integer' name='[logons_6_mnth]' role='measure' type='quantitative' />
+            <column-instance column='[clnt_tenure_yr]' derivation='None' name='[none:clnt_tenure_yr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:bal:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:clnt_tenure_mnth:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:logons_6_mnth:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:clnt_tenure_yr:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:bal:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:clnt_age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:clnt_tenure_mnth:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[avg:logons_6_mnth:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[none:clnt_tenure_yr:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='82' />
+            <format attr='width' field='[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[:Measure Names]' value='146' />
+            <format attr='cell-w' value='102' />
+            <format attr='cell-h' value='34' />
+            <format attr='cell' value='34' />
+            <format attr='cell-q' value='170' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[Multiple Values]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1cf7t3b1lxgwsb19jb12r0s9t4ee].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{B0108DA8-EB0C-4357-93AB-5782599953A3}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='93'>
+    <window class='worksheet' name='Total - Demo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{74BB5F16-E11C-4F73-8ABC-52D15CA36C1D}' />
+    </window>
+    <window class='worksheet' name='Blatt 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='254'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49653D07-089E-4617-AB76-EEE7A8477286}' />
+    </window>
+    <window class='worksheet' name='Blatt 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='249'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5DB8538-9F6E-45F5-9ED1-F49A986B1200}' />
+    </window>
+    <window class='worksheet' name='Blatt 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{365E8875-DAFD-479B-8B8C-8F434815974C}' />
+    </window>
+    <window class='worksheet' name='Completion Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='300'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='2' param='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{215F7A6A-E3EC-4738-83E9-5DE037C37718}' />
+    </window>
+    <window class='worksheet' name='Error Rate per Customer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='300'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D3FECF5-7A66-4091-901E-31561EABA870}' />
+    </window>
+    <window class='worksheet' name='Error per Visit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='300'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='1' param='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9569731E-BEFE-4442-AEEB-3CBAC75B4B53}' />
+    </window>
+    <window class='worksheet' name='Error Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='185'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='1' param='[federated.006v8q31dviszd17muyfy0esylwl].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B4C42E51-2378-4C88-B6FC-C818FDE63CD7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Demographics'>
+      <cards>
+        <edge name='left'>
+          <strip size='226'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{43E6B088-AE38-49C3-A4E1-3522A441A349}' />
+    </window>
+  </windows>
+</workbook>
