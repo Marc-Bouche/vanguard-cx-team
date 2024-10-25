@@ -37,3 +37,6 @@ Would these changes encourage more clients to complete the process?</br>
 10. README file</br>
 11. Github final commit</br>
 
+## Project Presentation
+
+[Presentation](https://docs.google.com/presentation/d/1Tt68VkSzHxEG_wzt3JCYzAng0y0I8FRF1h4Q5FonmCw/edit?usp=sharing)
